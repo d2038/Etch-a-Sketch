@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(60, 90%, 75%);
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 40px 0;
+  color: hsl(210, 80%, 30%);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+.clear {
+  font-size: medium;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: hsl(210, 80%, 30%);
+  background-color: hsl(210, 50%, 90%);
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.grid {
+  border: 2px solid hsl(210, 80%, 30%);
+  width: 480px;
+  height: 480px;
+}
