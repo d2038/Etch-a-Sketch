@@ -1,3 +1,9 @@
+createDivs(16);
+
+const divs = document.querySelectorAll('.gridDiv');
+
+divs.forEach(div => div.addEventListener('mouseover', changeColor), { once: true });
+
 function createDivs(gridSize) {
   const grid = document.querySelector('.grid');
   const divAmount = gridSize * gridSize;
@@ -11,4 +17,8 @@ function createDivs(gridSize) {
     div.style.width = `${divSize}px`;
     grid.appendChild(div);
   }
+}
+
+function changeColor() {
+  this.classList.add('blackColor');
 }
